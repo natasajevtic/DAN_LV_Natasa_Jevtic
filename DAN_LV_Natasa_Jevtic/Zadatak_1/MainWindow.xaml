@@ -39,38 +39,39 @@
                   ItemsSource="{Binding PizzaSizesList, UpdateSourceTrigger=PropertyChanged}"
                   SelectedItem="{Binding Pizza.PizzaSize, UpdateSourceTrigger=PropertyChanged}"
                   Text="{Binding Pizza.PizzaSize}"
-                  Width="125"/>
+                  Width="125"
+                  IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="1" Grid.Row="3" Content="Salami" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="1" Grid.Row="3"  IsChecked="{Binding Salami, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="1" Grid.Row="5" Content="Ham" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="1" Grid.Row="5"  IsChecked="{Binding Ham, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="1" Grid.Row="7" Content="Kulen" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="1" Grid.Row="7"  IsChecked="{Binding Kulen, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="1" Grid.Row="9" Content="Ketchup" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="1" Grid.Row="9"  IsChecked="{Binding Ketchup, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="1" Grid.Row="11" Content="Mayonnaise" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="1" Grid.Row="11"  IsChecked="{Binding Mayonnaise, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
 
         <Label Grid.Column="3" Grid.Row="3" Content="Chilly pepper" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="3" Grid.Row="3"  IsChecked="{Binding ChillyPepper, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="3" Grid.Row="5" Content="Olives" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="3" Grid.Row="5"  IsChecked="{Binding Olives, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="3" Grid.Row="7" Content="Oregano" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="3" Grid.Row="7"  IsChecked="{Binding Oregano, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="3" Grid.Row="9" Content="Sesame" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="3" Grid.Row="9"  IsChecked="{Binding Sesame, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
         <Label Grid.Column="3" Grid.Row="11" Content="Cheese" HorizontalAlignment="Left"/>
         <CheckBox Grid.Column="3" Grid.Row="11"  IsChecked="{Binding Cheese, UpdateSourceTrigger=PropertyChanged}" 
-                  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                  HorizontalAlignment="Right" VerticalAlignment="Center" IsEnabled="{Binding CanChoose, UpdateSourceTrigger=PropertyChanged}"/>
 
         <Button Grid.Column="1" Grid.Row="13" Content="Calculate amount" Command="{Binding CalculateAmount}"/>
         <Label Grid.Column="3" Grid.Row="13" Content="{Binding TotalPrice, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"/>

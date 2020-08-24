@@ -12,7 +12,7 @@ namespace Zadatak_1.Models
             {"Kulen", 150 },
             {"Ketchup", 20 },
             {"Mayonnaise", 20 },
-            {"Chilly pepper", 60 },
+            {"ChillyPepper", 60 },
             {"Olives", 80 },
             {"Oregano", 20 },
             {"Sesame", 20 },
